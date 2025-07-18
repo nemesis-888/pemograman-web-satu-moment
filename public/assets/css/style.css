@@ -1,0 +1,252 @@
+/* === IMPORT FONT & BODY SETUP === */
+body {
+    padding-top: 56px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #1f1f1f;
+    line-height: 1.6;
+}
+
+/* === HERO SECTION === */
+.hero-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #2e4a2c, #3e5f34);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-brand h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    margin-left: 10px; /* jarak antara logo dan teks */
+    color: white; /* sesuaikan warna dengan background navbar */
+}
+
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Image */
+.hero-section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    padding: 20px;
+    transition: transform 0.4s ease;
+}
+
+.hero-section img:hover {
+    transform: scale(1.03);
+}
+
+/* === PRODUCTS SECTION === */
+.products-section {
+    background-color: #ffffff;
+}
+
+.products-section h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* Product Card */
+.product-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    height: 220px;
+    width: 100%;
+}
+
+/* === TESTIMONIALS SECTION === */
+.testimonials-section {
+    background-color: #f1f1f1;
+}
+
+.testimonial-card {
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .rating {
+    font-size: 18px;
+}
+
+.testimonial-card .card-text {
+    font-style: italic;
+    color: #555;
+}
+
+/* === LOGO CONTAINER === */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+/* Logo Image Styling - Konsisten di Navbar dan Hero */
+.logo-container img {
+    height: 48px;
+    width: 48px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 6px;
+    object-fit: contain;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Logo Text Styling */
+.logo-container .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.logo-container .logo-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.logo-container .logo-subtitle {
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 20px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .hero-section img {
+        margin-top: 20px;
+    }
+
+    .logo-container .logo-title {
+        font-size: 16px;
+    }
+
+    .logo-container .logo-subtitle {
+        font-size: 11px;
+    }
+}
+/* About Section Styling */
+.about-section {
+    background-color: #f4f7f9;
+    color: #2c3e50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-section h1,
+.about-section h2 {
+    font-weight: 700;
+    color: #1c1c1c;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.about-section .lead {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.about-section .container {
+    max-width: 960px;
+}
+
+.about-section .row {
+    margin-top: 20px;
+}
